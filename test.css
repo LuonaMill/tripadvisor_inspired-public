@@ -1,0 +1,285 @@
+/*----------- MAIN----------- */
+/*---------------------------- */
+
+main {
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: TS-Med, sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #ff5d5d;
+}
+
+h1 span {
+  color: black;
+}
+
+h1 + p {
+  font-family: TS-Reg, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+/*----------- NAV MENU----------- */
+
+.bigmenu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.offer {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 5px;
+}
+
+.offer:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+}
+
+/*----------- 3 PICTURES ----------- */
+
+.city-pictures {
+  display: flex;
+  justify-content: center;
+}
+
+.city-pictures img:hover {
+  /* border: 1px solid black; */
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.left img {
+  box-sizing: border-box;
+  width: 650px;
+  height: 431px;
+  object-fit: cover;
+}
+
+.right img {
+  box-sizing: border-box;
+  width: 475px;
+  height: 214px;
+  object-fit: cover;
+  margin-left: 2px;
+}
+
+/*----------- INFO PARIS ----------- */
+/*----------------------------------- */
+
+.infoparis {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoleft {
+  width: 650px;
+}
+
+.inforight {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: TS-Med, sans-serif;
+  font-size: 28px;
+  /* font-weight: xbold; */
+  line-height: 38px;
+}
+.infoleft p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 30px 40px 30px 0;
+}
+
+/*-----Partie droite ----------- */
+
+.redzone {
+  box-sizing: border-box;
+  background-color: #ff5d5d;
+  height: 270px;
+  border-radius: 20px 20px 0 0;
+  padding: 30px 30px 20px 25px;
+}
+
+.redzone p {
+  margin: 25px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.inforight img {
+  height: 180px;
+  border-radius: 0 0 20px 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*----------- SECTION IMMANQUABLES ----------- */
+/*-------------------------------- */
+
+.unmissables {
+  height: 1135px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------- SE DIVERTIR ----------- */
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 20px 3px 20px 0;
+  margin-bottom: 30px;
+  border: 1px blue solid;
+  justify-content: space-between;
+  height: 30%;
+}
+/*-Partie gauche-------------- */
+
+.carouselleft {
+  /* border: 1px red solid; */
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  margin: 0 10px 230px 5px;
+}
+
+h3 {
+  font-family: TS-Reg, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.carouselleft p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: thin; /*ne sert à rien*/
+  color: #333333;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.carouselleft a {
+  font-family: TS-Med, sans-serif;
+  color: #000000;
+}
+/*-Partie droite-------------- */
+/*-LES 10 BOX DEDANS-------------- */
+
+.carouselright {
+  width: 70%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.carouselright .picture-visits {
+  width: 260px;
+  height: 60%;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+/* .tovisit {
+    position: relative;
+  }
+  .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ff5d5d;
+    position: absolute;
+  } */
+.stamp {
+  width: 35px;
+  height: 45px;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 25px;
+}
+/* .tovisit .stamp {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  } */
+.carouselright img:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.picture-visit .stamp {
+}
+/*----------- FOOTER ----------- */
+/*-------------------------------- */
+
+footer div {
+  margin-top: 100px;
+}
+
+/*----------- CORRECTION 1 (Jour3)----------- 
+  APPRENDRE A UTILISER : 
+  LES % dans les heights/widths
+  Les Gaps dans display flex
+  Le sélecteur element1, element2 {}
+  RETRAVAILLER : 
+  Remplacer mes nav p par nav a 
+  
+  /*----------- CORRECTION 2 (Jour4)----------- 
+  APPRENDRE A UTILISER : 
+  aspect-ratio:1/1 (pour un carré) ou 270/200 ou 27/2 selon lla proportion qu'on veut
+  RETRAVAILLER : 
+  Le breakrun avec nav a span (Europe > Paris ...)
+  
+  RAJOUTER :
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*----------- CORRECTION 3 (Jour4)----------- 
+  APPRENDRE A UTILISER : 
+  max-width pour mon container
+  element :is(button, a:not(:last-child)) {
+
+  RETRAVAILLER : 
+  Remplacer mes nav p par nav a 
+  
+/*-------------------------------- */
+
+/* .bigmenu-correction {
+    border: black solid 1px;
+    display: flex;
+    margin: 20px 0;
+  } */

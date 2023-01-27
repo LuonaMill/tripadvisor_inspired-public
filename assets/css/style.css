@@ -1,0 +1,520 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: TS-Reg, sans-serif;
+}
+
+.container {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+}
+
+h2 {
+  font-family: TS-Med, sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h3 {
+  font-family: TS-Reg, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/*---------------------------- */
+/*----------- HEADER----------- */
+/*---------------------------- */
+
+header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px black solid; */
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+header .container img#logo {
+  width: 18%;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+a {
+  /* border: 2px black solid; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+a span {
+  /* border: 1px dashed black; */
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+button {
+  /*A retravailler*/
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 10px 15px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+/*---------------------------- */
+/*----------- MAIN----------- */
+/*---------------------------- */
+
+main {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ff5d5d;
+  font-family: TS-Med, sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: black;
+}
+
+h1 + p {
+  color: #333333;
+  font-family: TS-Reg, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 50px;
+}
+
+/*----------- MAIN : Menu navigation en 7 blocs ----------- */
+
+.menunav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+  /* position: fixed; */
+}
+
+.menunav div {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 2vh;
+}
+.menunav .extramenu {
+  display: none;
+}
+
+.menunav div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/*----------- MAIN : Section bloc 3 photos ----------- */
+
+.city-pictures {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  /* position: relative; */
+}
+
+.city-pictures img:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+/*----------bloc gauche avec incrustations ----------- */
+
+.city-pictures .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.city-pictures .left .big {
+  object-fit: cover;
+  object-position: center;
+  width: 99.5%;
+  height: 100%;
+}
+
+.city-pictures .left .stamp {
+  position: absolute;
+  height: 15%;
+  left: 3%;
+  background-color: rgb(255, 187, 0);
+}
+
+.city-pictures .left button {
+  font-size: 12px;
+  height: 25px;
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+/*----------- bloc droit ----------- */
+
+.city-pictures .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.city-pictures .right img {
+  width: 100%;
+  height: 49.5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*----------- SECTION BREADCRUM ----------- */
+
+.breadcrum {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 50px;
+}
+
+.breadcrum div {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrum span {
+  font-size: 8px;
+}
+
+/*----------------------------------- */
+/*----------- SECTION ARTICLE ET MAP ----------- */
+/*----------------------------------- */
+
+.infoparis {
+  display: flex;
+  justify-content: space-between;
+}
+/*-----Partie gauche ----------- */
+
+.infoleft {
+  width: 50%;
+}
+
+.infoleft p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 30px 40px 30px 0;
+}
+/*-----Partie droite ----------- */
+
+.inforight {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 30px;
+}
+.inforight .redzone {
+  background-color: #ff5d5d;
+  height: 270px;
+  border-radius: 20px 20px 0 0;
+  padding: 30px 30px 20px 25px;
+}
+
+.inforight .redzone p {
+  margin: 25px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.inforight img {
+  height: 180px;
+  border-radius: 0 0 20px 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*------------------------------------------- */
+/*----------- SECTION IMMANQUABLES ----------- */
+/*-------------------------------------------- */
+
+.unmissables {
+  width: 100%;
+  height: 1135px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.unmissables h2 {
+  margin-bottom: 20px;
+}
+
+/*----------- SE DIVERTIR ----------- */
+/*-------------------------------------------- */
+
+.entertainment {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*----------- Partie texte ----------- */
+
+.entertainment .description {
+  height: 100%;
+  width: 25%;
+  padding-right: 20px;
+}
+
+.entertainment .description article {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.entertainment .description a {
+  text-decoration-line: underline;
+}
+
+/*----------- Partie carousel ------{----- */
+.entertainment .carousel {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  width: 75%;
+  /* border: #000000 solid 1px; */
+  overflow-x: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .entertainment .carousel::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* .entertainment .carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+} */
+.entertainment .carousel .firstidea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 33%;
+}
+
+/*----------- Partie carousel - grande image ----------- */
+
+.entertainment .carousel .firstidea .image1 {
+  display: flex;
+  height: 200px;
+  width: 270px;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  /* border: blue solid 3px; */
+}
+.entertainment .carousel .firstidea .image1 .picture {
+  height: 200px;
+  width: 270px;
+  object-fit: cover;
+  object-position: center;
+  /* border: blue solid 3px; */
+}
+
+/*----------- Partie carousel - tampon de couleur ----------- */
+
+.entertainment .carousel .image1 .stamp {
+  height: 45px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  background-color: rgb(255, 187, 0);
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 20px 20px 10px 10px;
+}
+
+.entertainment .carousel .image1 .stamp img {
+  height: 60%;
+  width: 80%;
+  object-fit: cover;
+}
+.entertainment .carousel .image1 .stamp span {
+  font-family: TS-Med, sans-serif;
+  font-size: 10px;
+}
+
+/*----------- Partie carousel - toggle ----------- */
+
+.entertainment .carousel .image1 i {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+
+/*----------- Partie carousel - description monument et rating ----------- */
+
+.entertainment .carousel .firstidea .introduction a:first-child {
+  font-family: TS-Med, sans-serif;
+  font-size: 20px;
+}
+
+.entertainment .carousel .firstidea .introduction .rating {
+  display: flex;
+  margin: 0 0 15px 10px;
+  gap: 1px;
+}
+
+.entertainment .carousel .firstidea .introduction .bullets {
+  height: 11px;
+  width: 11px;
+  border: green 1px solid;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.entertainment .carousel .firstidea .introduction .bullets:last-child {
+  background-color: #fff;
+}
+
+.entertainment .carousel .firstidea .introduction a:last-child {
+  font-family: TS-Reg, sans-serif;
+  font-size: 14px;
+}
+
+/*------------------------------------------- */
+/*----------- RESPONSIVE MEDIA QUERY  ----------- */
+/*-------------------------------------------- */
+
+@media (max-width: 1024px) {
+  header {
+    background-color: coral;
+  }
+
+  header nav span {
+    display: none;
+  }
+
+  .menunav {
+    /* height: 60px; */
+    /* max-width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: #ff5d5d 1px solid;
+  }
+
+  .menunav div {
+    width: calc((100%-30px) / 4);
+    flex-grow: 1;
+  }
+
+  .city-pictures {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    /* position: relative; */
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    background-color: lightgreen;
+  }
+  header nav span {
+    display: none;
+  }
+
+  header :is(button, a:not(:last-child)) {
+    display: none;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .menunav .extramenu {
+    display: flex;
+  }
+  .city-pictures .right {
+    display: none;
+  }
+
+  .city-pictures .left {
+    flex: 1;
+  }
+}
